@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Tell the browser to be responsive to screen width -->
+
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
+
+    <!-- v4.0.0-alpha.6 -->
+    <link rel="stylesheet" href="https://surokha.gov.onebd.xyz/eauth/dist/bootstrap/css/bootstrap.min.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="https://surokha.gov.onebd.xyz/eauth/dist/css/style.css">
+    <link rel="stylesheet" href="https://surokha.gov.onebd.xyz/eauth/dist/css/font-awesome/css/font-awesome.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="https://surokha.gov.onebd.xyz/eauth/dist/plugins/datatables/css/dataTables.bootstrap.min.css">
+</head>
+
+<body class="hold-transition login-page">
+
+    <div class="login-box" style="box-shadow: 0px 1px 9px #000;">
+
+        <div class="login-box-body">
+
+            <h3 class="login-box-msg"> User Access </h3>
+
+
+
+
+            <form action="" method="post">
+
+                <div class="form-group has-feedback">
+
+                    <input type="text" class="form-control sty1" placeholder="Username or Email" name="username">
+
+                </div>
+
+                <div class="form-group has-feedback">
+
+                    <input type="password" class="form-control sty1" placeholder="Password" name="password">
+
+                </div>
+
+                <div>
+
+                    <!-- /.col -->
+
+                    <div class="col-xs-4 m-t-1">
+
+                        <button type="submit" class="btn btn-primary btn-block btn-flat" name="login">Login</button>
+
+                    </div>
+
+                    <!-- /.col -->
+
+                </div>
+
+            </form>
+
+            <!-- /.login-box-body -->
+
+        </div>
+
+        <!-- /.login-box -->
+
+        <!-- jQuery 3 -->
+        <script src="https://surokha.gov.onebd.xyz/eauth/dist/js/jquery.min.js"></script>
+        <!-- v4.0.0-alpha.6 -->
+        <script src="https://surokha.gov.onebd.xyz/eauth/dist/bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- DataTable -->
+        <script src="https://surokha.gov.onebd.xyz/eauth/dist/plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="https://surokha.gov.onebd.xyz/eauth/dist/plugins/datatables/dataTables.bootstrap.min.js"></script>
+        <script>
+            $(function() {
+                $('#data-table').DataTable({
+                    'paging': true,
+                    'lengthChange': true,
+                    'searching': true,
+                    'ordering': true,
+                    'info': true,
+                    'autoWidth': true
+                })
+            })
+        </script>
+</body>
+
+</html>
